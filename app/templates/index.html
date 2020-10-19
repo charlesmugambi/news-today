@@ -1,0 +1,49 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
+<!-- Styles block -->
+
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="/app/static/styles.css">
+{% endblock %}
+<!-- Content block -->
+
+{% block content %}
+
+
+<div class="container">
+    <form>
+        <input type="text" name="news_query" placeholder="Search for a source" class="form-control">
+        <input type="submit"  value="Submit" class="btn btn-default">
+    </form>
+
+</div>
+
+
+
+
+<ul>
+<li class = "container">
+    {{macro.displayNewsList(sports)}}
+
+    
+    
+
+</li>
+
+
+
+<li class = "container">
+    {{macro.displayNewsList(general)}}
+</li>
+
+
+
+
+<li class = "container">
+    {{macro.displayNewsList(entertainment)}}
+</li>
+   
+</ul>
+{% endblock %}
