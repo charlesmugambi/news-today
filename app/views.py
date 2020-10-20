@@ -12,7 +12,6 @@ from .models import review
 from .forms import ReviewForm
 Review = review.Review
 
-# Views
 @app.route('/')
 def index():
     from .request import api_key, search_news

@@ -4,7 +4,7 @@ import urllib.request
 import json
 News = news.News
 
-# Getting api key
+# Getting the api key
 api_key = app.config['NEWS_API_KEY']
 
 
