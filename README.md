@@ -1,1 +1,1 @@
-# news-today
+# news
