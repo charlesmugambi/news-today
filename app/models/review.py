@@ -1,7 +1,7 @@
 class Review:
 
     all_reviews = []
- # Some code is here
+ 
     @classmethod
     def get_reviews(cls,id):
 
